@@ -10,5 +10,5 @@ urlpatterns = [
     path('game/', views.game, name='game'),
 
     # score board
-    path('scoreboard/', views.score_board, name='score_board'),
+    path('leaderboard/', views.leader_board, name='score_board'),
 ]
