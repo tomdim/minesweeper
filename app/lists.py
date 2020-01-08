@@ -13,6 +13,7 @@ LEVELS = {
 GAME_STATUSES = (
     ('SUCCESS', 'Success'),
     ('FAIL', 'Failed'),
+    ('ABORT', 'Aborted'),
     ('ERROR', 'An Error Occurred'),
     ('UNKNOWN', 'Unknown Status'),
 )

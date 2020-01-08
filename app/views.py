@@ -6,6 +6,11 @@ from .models import Game
 from .utils import get_level, create_game
 
 
+def welcome(request):
+
+    return render(request, 'index.html', {})
+
+
 def game(request):
     """
     Initialize Game
@@ -17,7 +22,7 @@ def game(request):
         user = User.objects.get_or_create(username=username)
 
     # get game level
-    level = request.POST.get('level')
+    level = request.POST.get('level', '1')
     level = get_level(level)
 
     # create game arrays

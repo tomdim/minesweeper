@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('level', models.CharField(blank=True, choices=[('1', 'Beginner (8x8 with 10 mines)'), ('2', 'Intermediate (16x16 with 40 mines)'), ('3', 'Expert (16x30 with 99 mines)')], max_length=10, null=True)),
-                ('status', models.CharField(blank=True, choices=[('SUCCESS', 'Success'), ('FAIL', 'Failed'), ('ERROR', 'An Error Occurred'), ('UNKNOWN', 'Unknown Status')], default=None, max_length=10, null=True)),
+                ('status', models.CharField(blank=True, choices=[('SUCCESS', 'Success'), ('FAIL', 'Failed'), ('ABORT', 'Aborted'), ('ERROR', 'An Error Occurred'), ('UNKNOWN', 'Unknown Status')], default=None, max_length=10, null=True)),
                 ('bombs_flagged', models.IntegerField(blank=True, default=0, null=True)),
                 ('time_elapsed', models.IntegerField(blank=True, default=0, null=True)),
                 ('score', models.IntegerField(blank=True, default=0, null=True)),

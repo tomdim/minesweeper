@@ -3,7 +3,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # entry page
+    # minesweeper game
     path('', views.welcome, name='welcome'),
 
     # minesweeper game
